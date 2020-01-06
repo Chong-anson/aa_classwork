@@ -13,7 +13,7 @@ class KnightPathFinder
     #To help us find paths, we will build a move tree. The values in the tree will be positions. A node is a child of another node if you can move from the parent position directly to the child position. The root node of the tree should be the knight's starting position. You will want to build on your PolyTreeNode work, using PolyTreeNode instances to represent each position.
 
 
-    
+
     def build_move_tree(end_pos)
         #build entire tree
         tree = [@root_node]
