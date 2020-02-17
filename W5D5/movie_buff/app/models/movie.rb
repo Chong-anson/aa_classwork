@@ -11,5 +11,5 @@ class Movie < ApplicationRecord
 
   has_many :actors,
     through: :castings,
-    source: :actor
+    source: :actor 
 end
