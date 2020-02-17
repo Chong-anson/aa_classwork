@@ -1,0 +1,28 @@
+<% action_url = action == 'create' ? albums_url : edit_album %>
+<% method = action == 'create' ? 'POST' : 'PATCH' %>
+<% message = action == 'create' ? 'Create album' : 'Edit album' %>
+    
+<form action="<%= action_url %>" method='POST'>
+    <% if action == 'update' %>
+        <input type="hidden" name="_method" value="PATCH">
+    <% end %>
+    <input type="hidden" name="authenticity_token" value="form_authenticity_token">
+
+    <label>Title: 
+    <input type="text" name="album[title]" value="<%= album.title %>">
+    </label>
+    <label>Year: 
+    <input type="text" name="album[yr]" value="<%= album.yr %>">
+    </label>
+
+    <label>Type:
+        <select name="album[album_type]"> 
+            <option value="Live"> Live </option>
+            <option value="Studio"> Studio </option>
+        </select>
+    </label>
+
+    <input type="hidden" name="album[band_id]" value=<%= params[:band_id] %>>
+    <input type="submit" value="<%= message %>">
+
+</form>
