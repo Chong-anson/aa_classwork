@@ -1,0 +1,19 @@
+/* PHASE 6: Sidebar */
+.profile-picture a {
+  display: block;
+  margin-top: -100px ;
+  position: relative;
+}
+
+.profile-nav ul li {
+   border-top : 1px solid ;
+   /* background-color: aqua; */
+}
+.profile-nav ul li:last-child {
+   border-bottom : 1px solid ;
+   /* background-color: aqua; */
+}
+
+.profile-info h2,.profile-nav ul {
+  padding: 20px;
+}
