@@ -1,0 +1,28 @@
+/* PHASE 3: Layout */
+body { 
+
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column ;
+  align-items: ;
+
+}
+.content {
+  display: flex;
+  min-height: 200px;
+  width: 900px;
+  justify-content: center;
+}
+
+.content-sidebar {
+  width: 10%;
+  padding: 20px;
+  background-color: cornflowerblue;
+}
+
+.content-main {
+  width:10%;
+  padding: 10px;
+  background-color: goldenrod;
+}
+
