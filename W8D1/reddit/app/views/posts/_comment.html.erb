@@ -1,0 +1,9 @@
+ <ul>
+
+    <% comment[comment_id].each do | child |  %>
+        <li><%= child.content %><%= button_to "Reply", comment_url(child), method: :get  %></li>      
+        <% unless comment[child.id].empty? %>
+            <%= render 'comment', comment: comment, comment_id: child.id %>
+        <% end %>
+    <% end %>
+</ul>  
