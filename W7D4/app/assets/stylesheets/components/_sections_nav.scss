@@ -1,0 +1,19 @@
+.sections_nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 2px; 
+    justify-content: center;
+}
+
+.sections_nav ul li {
+    padding: 0 10px; 
+    font-size: 10px;
+}
+
+.sections_nav ul li:last-child {
+    text-decoration: underline;
+}
+
+.sections_nav ul li:hover {
+    background-color: lightgrey
+}
