@@ -1,0 +1,27 @@
+.board{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.tile {
+    display: inline-block;
+    border-style: outset;
+    background-color: aqua;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}
+
+.flagged {
+
+}
+
+.explored {
+    border-style: inset;
+
+}
+
+.bombed {
+
+}
