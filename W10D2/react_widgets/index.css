@@ -1,0 +1,9 @@
+h1, p{
+    font-family: 'Lacquer', sans-serif;
+}
+
+.clock{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
